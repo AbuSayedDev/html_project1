@@ -1,4 +1,4 @@
-# Simple HTML Portfolio1 Design
+# Simple HTML Portfolio Design
 
 ## Project Details
 

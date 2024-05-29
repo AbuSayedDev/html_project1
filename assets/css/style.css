@@ -59,7 +59,7 @@ p {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     font-style: normal;
     color: #3A3A3A;
 }
@@ -75,6 +75,10 @@ p {
     line-height: 28px;
 }
 
+.btn2 {
+    border-radius: 0px !important;
+}
+
 .btn span i {
     color: #FFFFFF;
     font-size: 24px;
@@ -86,6 +90,11 @@ p {
 .btn span i::before {
     font-weight: 600 !important;
 
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 /* Header Section CSS Start */
@@ -126,6 +135,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 50px;
 }
 
 .hero_left .hero_left_content h1 {
@@ -134,7 +144,6 @@ p {
 }
 
 .hero_left .hero_left_content p {
-    width: 80%;
     font-weight: 600;
     margin-top: 10px;
 }
@@ -142,12 +151,6 @@ p {
 .hero_left_button {
     margin-top: 20px;
 }
-
-.hero_right .hero_right_images img {
-    width: 100%;
-    height: 100%;
-}
-
 
 /* Client Section CSS Start */
 
@@ -251,4 +254,70 @@ p {
 .product .product_see_more_btn .btn span i {
     background: transparent;
     color: #E02C6D;
+}
+
+/* Call To Action Section CSS Start */
+
+.callto_action_area {
+    padding: 50px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+}
+
+.callto_action_area .callto_action_left,
+.callto_action_area .callto_action_right {
+    width: 100%;
+    height: auto;
+}
+
+.callto_action_area .callto_action_right .callto_action_right_content h2 {
+    font-size: 38px;
+    line-height: 60px;
+    color: #0A0826;
+}
+
+.callto_action_area .callto_action_right .callto_action_right_content p {
+    color: #6C6C6C;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.callto_action_right_btn {
+    padding-top: 20px;
+}
+
+
+/* Footer Section CSS Start */
+#footer_section {
+    padding: 50px 0 30px 0;
+    background: #0a0826;
+    text-align: center;
+}
+
+.footer_area .footer_logo img {
+    max-width: 25%;
+}
+
+.footer_area .footer_copyright p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #D9DBE1;
+}
+
+.footer_social ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_social ul li {
+    padding: 8px 15px;
+    margin: 10px;
+}
+
+.footer_social ul a {
+    color: #ffffff;
+    font-size: 18px;
 }

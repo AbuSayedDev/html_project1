@@ -156,13 +156,15 @@ img {
 
 .client_logo_area {
     padding: 50px 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(7, 1fr);
     align-items: center;
+    text-align: center;
 }
 
 .client_logo_area .client_logo img {
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 
@@ -259,7 +261,7 @@ img {
 /* Call To Action Section CSS Start */
 
 .callto_action_area {
-    padding: 50px 0;
+    padding: 50px 0 100px 0;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -320,4 +322,79 @@ img {
 .footer_social ul a {
     color: #ffffff;
     font-size: 18px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 1024px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .container {
+        width: 540px;
+    }
+
+    .nav_menu {
+        display: none;
+    }
+
+    .client_logo_area,
+    .product,
+    .callto_action_area {
+        padding: 25px 0;
+    }
+
+    .hero_area {
+        flex-direction: column
+    }
+
+    .hero_area .hero_left .hero_left_content h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .hero_area .hero_right {
+        text-align: center;
+    }
+
+    .hero_area .hero_right .hero_right_images img {
+        width: 70%;
+    }
+
+    .client_logo_area {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .product_item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product .product_see_more_btn {
+        text-align: center;
+    }
+
+    .callto_action_area {
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .container {
+        width: 414px;
+    }
+
+    .client_logo_area {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product_item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer_area .footer_logo img {
+        max-width: 50%;
+    }
 }

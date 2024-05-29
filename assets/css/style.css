@@ -106,6 +106,14 @@ img {
     align-items: center;
 }
 
+.responsive_menu {
+    display: none;
+}
+
+.responsive_menu .icon span i {
+    font-size: 35px;
+}
+
 .logo_area img {
     width: 100%;
     height: auto;
@@ -336,8 +344,12 @@ img {
         width: 540px;
     }
 
-    .nav_menu {
+    .nav_menu ul {
         display: none;
+    }
+
+    .responsive_menu {
+        display: block;
     }
 
     .client_logo_area,
